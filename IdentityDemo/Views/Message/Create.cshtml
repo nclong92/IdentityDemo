@@ -1,0 +1,20 @@
+﻿@model CreateMessageViewModel
+
+<form method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="form-group">
+                <label asp-for="Text"></label>
+                <input type="text" asp-for="Text" class="form-control" />
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button type="submit" asp-action="Create" class="btn btn-primary">Đồng ý</button>
+        </div>
+    </div>
+</form>
